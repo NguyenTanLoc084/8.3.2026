@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quà Kỷ Niệm Yêu Thương</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <button class="menu-item" id="btn-music">
+                <span class="icon"><i class="fas fa-music"></i></span>
+                <span class="text">Music</span>
+            </button>
+            <button class="menu-item" id="btn-letter">
+                <span class="icon"><i class="fas fa-envelope"></i></span>
+                <span class="text">Letter</span>
+            </button>
+            <button class="menu-item" id="btn-image">
+                <span class="icon"><i class="fas fa-image"></i></span>
+                <span class="text">Image</span>
+            </button>
+            <button class="menu-item" id="btn-gift">
+                <span class="icon"><i class="fas fa-gift"></i></span>
+                <span class="text">Gift</span>
+            </button>
+        </div>
+
+        <div id="music-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2><i class="fas fa-play-circle"></i> Music Player </h2>
+        
+        <div class="music-disk-container">
+            <img src="album.jpg" id="disk-image" class="disk" alt="Album Art">
+        </div>
+
+        <div class="player-controls">
+            <button class="play-pause"><i class="fas fa-play"></i></button>
+            <button class="stop"><i class="fas fa-stop"></i></button>
+        </div>
+        <p id="song-name">Như Một Người Dưng</p>
+        <audio id="audio-player">
+            <source src="nhumotnguoidung.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+</div>
+
+        <div id="letter-modal" class="modal">
+    <div class="modal-content letter-paper">
+        <span class="close">&times;</span>
+        <div class="letter-header">
+            <h2>Gửi người đặc biệt 🌷</h2>
+        </div>
+        <div class="letter-body">
+            <p id="typing-text"></p>
+        </div>
+        <div class="letter-footer">
+            <p>— Người luôn mong bạn hạnh phúc</p>
+        </div>
+    </div>
+</div>
+
+        <div id="image-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2><i class="fas fa-camera-retro"></i> Treasure of images </h2>
+                <div class="gallery-container">
+                <div class="gallery-slide" id="slider">
+                    <img src="hinh1.jpg" alt="Hinh 1">
+                    <img src="hinh2.png" alt="Hinh 2">
+                    <img src="hinh3.png" alt="Hinh 3">
+                    <img src="hinh4.jpg" alt="Hinh 4">
+            </div>
+            <div class="slide-controls">
+            <button id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+            <button id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+</div>
+            </div>
+        </div>
+
+        <div id="gift-modal" class="modal">
+    <div class="modal-content" id="gift-box-container">
+        <span class="close">&times;</span>
+        <h2 id="gift-title"><i class="fas fa-gift"></i> Surprise Gift </h2>
+        <div id="gift-area">
+            <div class="gift-icon" id="open-gift-btn">
+                <i class="fas fa-box" style="font-size: 80px; color: #ff80ab; cursor: pointer;"></i>
+                <p>Bấm vào để nhận quà bất ngờ nè! 🎁</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
